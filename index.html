@@ -23,7 +23,7 @@
 
 
 <body>
-    <canvas id="particles"></canvas>
+    <!--<canvas id="particles"></canvas>-->
 
 
     <!-- Hero Section -->
@@ -39,7 +39,7 @@
                 <span class="name-line partner-name">Alekhya</span>
             </h1>
             <p class="date">Celebrating our Union • February 27, 2026</p>
-            <p style="font-size: 0.9rem; margin-top: 10px; color: #ddd;">(Married on Feb 25th)</p>
+            <!-- <p style="font-size: 0.9rem; margin-top: 10px; color: #ddd;">(Marriage on Feb 25th)</p> -->
         </div>
     </header>
 
@@ -66,6 +66,63 @@
         </div>
         <div class="quote-text">
             <blockquote>"And so the adventure begins..."</blockquote>
+        </div>
+    </section>
+
+    <!-- Invitation & Countdown Section -->
+    <section class="invitation-section">
+        <div class="invitation-bg">
+            <img src="./images/0N3A7642.JPG" alt="Background" class="zoom-bg">
+            <div class="invitation-overlay"></div>
+        </div>
+        <div class="invitation-content">
+            <h2>We are getting married</h2>
+            
+            <!-- Keeping generic based on wireframe or as placeholder, will use JS to make it dynamic or hardcode based on user preference if they asked. Wait, user asked for "Something like this" and showed an image with "We are geting married On Monday 10th February". I should probably stick to the site's actual date which is Feb 27th but use the layout. -->
+            <!-- Actually, the user's prompt said "can we have something like this in our website like the invitation and also countdown". The image shows "We are getting married". The current site is for a Reception on Feb 27th. I will use "Celebration of Love" or "Save the Date" or just "We can't wait to celebrate with you".
+             Let's stick to "We are getting married" as per the image for now, or maybe "Celebrating our Union" to match the hero.
+             Actually, let's look at the user request again: "can we have something like this... like the invitation".
+             The user also has a date in the hero: "Reception... February 27, 2026".
+             I'll use "Join us for the Celebration" to be safe and accurate to the context of a Reception, or "Countdown to the Big Day".
+             Let's use "We are getting married" as requested "like this", but I will change the date text to match the actual date 27th Feb.
+             -->
+            <p class="sub-text">On Wednesday, February 25th, 2026</p>
+            <p class="date-text">Join us at our Reception On February 27th, 2026</p>
+            <div id="countdown" class="countdown-container">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+
+            <!-- "Dear Family & Friends" Text from image -->
+            <div class="invite-message">
+                <h3>Dear Family & Friends</h3>
+                <svg class="heart-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                        fill="none" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <p>
+                    We are delighted to announce our grand reception and invite you to celebrate this special moment
+                    with us.
+                    Your love and support mean the world to us, and your presence will make our day complete.
+                    Join us for an evening of joy, laughter, and cherished memories as we begin our journey together.
+                </p>
+                <p class="b-text">With love and excitement,<br>Surya & Alekhya</p>
+            </div>
         </div>
     </section>
 
@@ -101,7 +158,7 @@
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
                     <a href="./images/059A7337.JPG" class="glightbox">
-                        <img src="./images/059A7337.JPG" alt="Gallery 1" loading="lazy">
+                        <img src="./images/0N3A7340.JPG" alt="Gallery 1" loading="lazy">
                     </a>
                 </div>
                 <!-- Slide 2 -->
@@ -113,15 +170,15 @@
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
                     <a href="./images/0N3A7336.JPG" class="glightbox">
-                        <img src="./images/0N3A7336.JPG" alt="Gallery 3" loading="lazy">
+                        <img src="./images/0N3A7291.JPG" alt="Gallery 3" loading="lazy">
                     </a>
                 </div>
                 <!-- Slide 4 -->
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                     <a href="./images/0N3A7291.JPG" class="glightbox">
                         <img src="./images/0N3A8061.JPG" alt="Gallery 4" loading="lazy">
                     </a>
-                </div>
+                </div> -->
                 <!-- Slide 5 -->
                 <div class="swiper-slide">
                     <a href="./images/0N3A7391.JPG" class="glightbox">
@@ -137,7 +194,7 @@
                 <!-- Slide 7 -->
                 <div class="swiper-slide">
                     <a href="./images/0N3A7555.JPG" class="glightbox">
-                        <img src="./images/0N3A7555.JPG" alt="Gallery 7" class="focus-left" loading="lazy">
+                        <img src="./images/0N3A8097.JPG" alt="Gallery 7" class="focus-left" loading="lazy">
                     </a>
                 </div>
 
@@ -146,7 +203,7 @@
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
                     <a href="./images/059A7337.JPG" class="glightbox">
-                        <img src="./images/059A7337.JPG" alt="Gallery 1" loading="lazy">
+                        <img src="./images/0N3A7340.JPG" alt="Gallery 1" loading="lazy">
                     </a>
                 </div>
                 <!-- Slide 2 -->
@@ -158,15 +215,15 @@
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
                     <a href="./images/0N3A7336.JPG" class="glightbox">
-                        <img src="./images/0N3A7336.JPG" alt="Gallery 3" loading="lazy">
+                        <img src="./images/0N3A7291.JPG" alt="Gallery 3" loading="lazy">
                     </a>
                 </div>
                 <!-- Slide 4 -->
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                     <a href="./images/0N3A7291.JPG" class="glightbox">
                         <img src="./images/0N3A8061.JPG" alt="Gallery 4" loading="lazy">
                     </a>
-                </div>
+                </div> -->
                 <!-- Slide 5 -->
                 <div class="swiper-slide">
                     <a href="./images/0N3A7391.JPG" class="glightbox">
@@ -182,7 +239,7 @@
                 <!-- Slide 7 -->
                 <div class="swiper-slide">
                     <a href="./images/0N3A7555.JPG" class="glightbox">
-                        <img src="./images/0N3A7555.JPG" alt="Gallery 7" class="focus-left" loading="lazy">
+                        <img src="./images/0N3A8097.JPG" alt="Gallery 7" class="focus-left" loading="lazy">
                     </a>
                 </div>
 
